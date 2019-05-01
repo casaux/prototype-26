@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA - Foreign passport details</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src/css/furnace.min.css">
+      <link rel="stylesheet" href="../mycasa-src/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src/js/furnace.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+         
+ 
+      </script>
+      <style type="text/css">
+         /* page specific css */
+         
+         
+         
+         #validate {
+		  display: block;
+		  }
+		  .form-sub-input {
+		  margin-left: 2.5em;
+		  }
+		  .panel .form-sub-input{
+		  opacity:0.5;
+		  }
+		  .panel.active .form-sub-input{
+		  opacity:1;
+		  }
+		   
+		  .date-limit{
+		  display:none;
+		  }
+		  .panel .au-control-input__input{
+		  display:block;
+		  height:0;
+		  width:0;
+		  }
+		   
+		   #date-limit span, .input-state{
+			   display:none;
+		   }
+		  
+		  #passport{
+			  display:none;
+		  }
+		  
+		  #id-ap{
+			  margin-bottom:2.5rem;
+			  display:block;
+		  }
+         
+         
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+        <div class="header">
+            <div class="container">
+               <div class="row">
+               
+               
+               
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+                  
+                  
+						<div class="au-body au-body--dark">
+                        <a class="au-btn au-btn--dark" href="signed-out.html">Sign out</a>
+                     </div>
+                  
+                  
+                  
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                  
+               </div>
+            </div>
+         </div> <div class="body"><div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-xs-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+            <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="welcome.html">myCASA</a></li>
+                     <li>Aviation reference number application</li>
+                  </ul>
+               </nav>
+              
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Foreign passport details</span>
+                  </h1>
+                  <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
+               </header>
+               
+               
+               <div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+               
+					
+               
+               <label class="casa-label-guidance" for="family-name-input">Family name
+               <div class="casa-form-guidance">Please enter your family name (surname) as written on your passport</div>
+               <input class="au-text-input au-text-input--block" name="family-name-input" id="family-name-input" type="text" value="">
+               </label>
+               
+               <br>
+               <label class="casa-label-guidance" for="given-name-input">Given names
+               <div class="casa-form-guidance">Please enter all given names as written on your passport, including any middle names</div>
+               <input class="au-text-input au-text-input--block" name="given-name-input" id="given-name-input" type="text" value="">
+               </label>
+              
+               <br>
+               <div class="form-section date-entry">
+                  <p class="casa-label-guidance">Date of birth</p>
+                  <div class="casa-form-guidance">For example, 31 01 1990</div>
+                  <div class="date date-day">
+                     <label class="casa-label-guidance" for="text-input-block1" class="casa-form-guidance">Day</label>
+                     <input class="au-text-input au-text-input--block" name="text-input-block" placeholder="DD" id="text-input-block1" type="text" value="">
+                  </div>
+                  <div class="date date-month">
+                     <label class="casa-label-guidance" for="text-input-block2" class="casa-form-guidance">Month</label>
+                     <input class="au-text-input au-text-input--block" name="text-input-block" placeholder="MM" id="text-input-block2" type="text" value="">
+                  </div>
+                  <div class="date date-year">
+                     <label class="casa-label-guidance" for="text-input-block3" class="casa-form-guidance">Year</label>
+                     <input class="au-text-input au-text-input--block" name="text-input-block" placeholder="YYYY" id="text-input-block3" type="text" value="">
+                  </div>
+                  <br style="clear:both;" />
+               </div>
+               <br style="clear:both;" /> &nbsp;
+               <br />
+              
+					
+                  <label class="casa-label-guidance" for="passport_number">
+                     Passport number
+                     <div class="casa-form-guidance">
+                        Please enter your passport number exactly as it appears on your passport
+                     </div>
+                     <input class="au-text-input au-text-input--block" name="passport_number" id="passport_number" type="text" value="">
+                     
+                  </label>
+					
+					
+					 <br />
+              
+					
+                  <label class="casa-label-guidance" for="passport_number">
+   
+					 	<label for="select1block"> Nationality on passport</label>
+					   <div class="casa-form-guidance">
+                        Please enter the nationality as it appears on your passport
+                     </div>
+						<select id="select1block" class="au-select au-select--block">
+							<option role="option" data-user-option="" value="a388a9e4-c9b1-e811-a96f-000d3ae05f14">Afghan</option><option role="option" data-user-option="" value="58ee5928-1c57-e711-8113-c4346bc4de40">Albanian</option><option role="option" data-user-option="" value="60ee5928-1c57-e711-8113-c4346bc4de40">Algerian</option><option role="option" data-user-option="" value="90ee5928-1c57-e711-8113-c4346bc4de40">American</option><option role="option" data-user-option="" value="a2ee5928-1c57-e711-8113-c4346bc4de40">Andorran</option><option role="option" data-user-option="" value="a8ee5928-1c57-e711-8113-c4346bc4de40">Angolan</option><option role="option" data-user-option="" value="bcee5928-1c57-e711-8113-c4346bc4de40">Antiguan, Barbudan</option><option role="option" data-user-option="" value="04ef5928-1c57-e711-8113-c4346bc4de40">Argentine</option><option role="option" data-user-option="" value="08ef5928-1c57-e711-8113-c4346bc4de40">Armenian</option><option role="option" data-user-option="" value="58ef5928-1c57-e711-8113-c4346bc4de40">Austrian</option><option role="option" data-user-option="" value="7eef5928-1c57-e711-8113-c4346bc4de40">Azerbaijani</option><option role="option" data-user-option="" value="90ef5928-1c57-e711-8113-c4346bc4de40">Bahamian</option><option role="option" data-user-option="" value="94ef5928-1c57-e711-8113-c4346bc4de40">Bahraini</option><option role="option" data-user-option="" value="aaef5928-1c57-e711-8113-c4346bc4de40">Bangladeshi</option><option role="option" data-user-option="" value="b8ef5928-1c57-e711-8113-c4346bc4de40">Barbadian</option><option role="option" data-user-option="" value="e8ef5928-1c57-e711-8113-c4346bc4de40">Belarusian</option><option role="option" data-user-option="" value="ecef5928-1c57-e711-8113-c4346bc4de40">Belgian</option><option role="option" data-user-option="" value="f2ef5928-1c57-e711-8113-c4346bc4de40">Belizean</option><option role="option" data-user-option="" value="04f05928-1c57-e711-8113-c4346bc4de40">Beninese</option><option role="option" data-user-option="" value="0cf05928-1c57-e711-8113-c4346bc4de40">Bhutanese</option><option role="option" data-user-option="" value="16f05928-1c57-e711-8113-c4346bc4de40">Bissau-Guinean</option><option role="option" data-user-option="" value="2ef05928-1c57-e711-8113-c4346bc4de40">Bolivian</option><option role="option" data-user-option="" value="42f05928-1c57-e711-8113-c4346bc4de40">Bosnian</option><option role="option" data-user-option="" value="50f05928-1c57-e711-8113-c4346bc4de40">Brazilian</option><option role="option" data-user-option="" value="5ef05928-1c57-e711-8113-c4346bc4de40">British</option><option role="option" data-user-option="" value="74f05928-1c57-e711-8113-c4346bc4de40">Bruneian</option><option role="option" data-user-option="" value="7cf05928-1c57-e711-8113-c4346bc4de40">Bulgarian</option><option role="option" data-user-option="" value="82f05928-1c57-e711-8113-c4346bc4de40">Burkinabe</option><option role="option" data-user-option="" value="86f05928-1c57-e711-8113-c4346bc4de40">Burmese</option><option role="option" data-user-option="" value="8cf05928-1c57-e711-8113-c4346bc4de40">Burundian</option><option role="option" data-user-option="" value="b8f05928-1c57-e711-8113-c4346bc4de40">Cambodian</option><option role="option" data-user-option="" value="c0f05928-1c57-e711-8113-c4346bc4de40">Cameroonian</option><option role="option" data-user-option="" value="cef05928-1c57-e711-8113-c4346bc4de40">Canadian</option><option role="option" data-user-option="" value="04f15928-1c57-e711-8113-c4346bc4de40">Cape Verdian</option><option role="option" data-user-option="" value="9af15928-1c57-e711-8113-c4346bc4de40">Central African</option><option role="option" data-user-option="" value="b6f15928-1c57-e711-8113-c4346bc4de40">Chadian</option><option role="option" data-user-option="" value="e8f15928-1c57-e711-8113-c4346bc4de40">Chilean</option><option role="option" data-user-option="" value="eaf15928-1c57-e711-8113-c4346bc4de40">Chinese</option><option role="option" data-user-option="" value="40f25928-1c57-e711-8113-c4346bc4de40">Colombian</option><option role="option" data-user-option="" value="60f25928-1c57-e711-8113-c4346bc4de40">Comoran</option><option role="option" data-user-option="" value="82f25928-1c57-e711-8113-c4346bc4de40">Congolese</option><option role="option" data-user-option="" value="baf25928-1c57-e711-8113-c4346bc4de40">Costa Rican</option><option role="option" data-user-option="" value="e6f25928-1c57-e711-8113-c4346bc4de40">Croatian</option><option role="option" data-user-option="" value="06f35928-1c57-e711-8113-c4346bc4de40">Cuban</option><option role="option" data-user-option="" value="1af35928-1c57-e711-8113-c4346bc4de40">Cypriot</option><option role="option" data-user-option="" value="1ef35928-1c57-e711-8113-c4346bc4de40">Czech</option><option role="option" data-user-option="" value="36f35928-1c57-e711-8113-c4346bc4de40">Danish</option><option role="option" data-user-option="" value="c4f35928-1c57-e711-8113-c4346bc4de40">Djiboutian</option><option role="option" data-user-option="" value="d0f35928-1c57-e711-8113-c4346bc4de40">Dominican</option><option role="option" data-user-option="" value="f8f35928-1c57-e711-8113-c4346bc4de40">Dutch</option><option role="option" data-user-option="" value="a62c522e-1c57-e711-8113-c4346bc4de40">Ecuadorian</option><option role="option" data-user-option="" value="b82c522e-1c57-e711-8113-c4346bc4de40">Egyptian</option><option role="option" data-user-option="" value="d02c522e-1c57-e711-8113-c4346bc4de40">Emirati</option><option role="option" data-user-option="" value="f82c522e-1c57-e711-8113-c4346bc4de40">Equatorial Guinean</option><option role="option" data-user-option="" value="002d522e-1c57-e711-8113-c4346bc4de40">Eritrean</option><option role="option" data-user-option="" value="0e2d522e-1c57-e711-8113-c4346bc4de40">Estonian</option><option role="option" data-user-option="" value="142d522e-1c57-e711-8113-c4346bc4de40">Ethiopian</option><option role="option" data-user-option="" value="d82d522e-1c57-e711-8113-c4346bc4de40">Fijian</option><option role="option" data-user-option="" value="f02d522e-1c57-e711-8113-c4346bc4de40">Finnish</option><option role="option" data-user-option="" value="822e522e-1c57-e711-8113-c4346bc4de40">French</option><option role="option" data-user-option="" value="b22e522e-1c57-e711-8113-c4346bc4de40">Gabonese</option><option role="option" data-user-option="" value="ba2e522e-1c57-e711-8113-c4346bc4de40">Gambian</option><option role="option" data-user-option="" value="dc2e522e-1c57-e711-8113-c4346bc4de40">Georgian</option><option role="option" data-user-option="" value="e22e522e-1c57-e711-8113-c4346bc4de40">German</option><option role="option" data-user-option="" value="ec2e522e-1c57-e711-8113-c4346bc4de40">Ghanaian</option><option role="option" data-user-option="" value="202f522e-1c57-e711-8113-c4346bc4de40">Greek</option><option role="option" data-user-option="" value="2a2f522e-1c57-e711-8113-c4346bc4de40">Grenadian</option><option role="option" data-user-option="" value="402f522e-1c57-e711-8113-c4346bc4de40">Guatemalan</option><option role="option" data-user-option="" value="4a2f522e-1c57-e711-8113-c4346bc4de40">Guinean</option><option role="option" data-user-option="" value="522f522e-1c57-e711-8113-c4346bc4de40">Guyanese</option><option role="option" data-user-option="" value="5e2f522e-1c57-e711-8113-c4346bc4de40">Haitian</option><option role="option" data-user-option="" value="b02f522e-1c57-e711-8113-c4346bc4de40">Honduran</option><option role="option" data-user-option="" value="b62f522e-1c57-e711-8113-c4346bc4de40">Hong Kong</option><option role="option" data-user-option="" value="c82f522e-1c57-e711-8113-c4346bc4de40">Hungarian</option><option role="option" data-user-option="" value="1e30522e-1c57-e711-8113-c4346bc4de40">Icelandic</option><option role="option" data-user-option="" value="4830522e-1c57-e711-8113-c4346bc4de40">I-Kiribati</option><option role="option" data-user-option="" value="9430522e-1c57-e711-8113-c4346bc4de40">Indian</option><option role="option" data-user-option="" value="9c30522e-1c57-e711-8113-c4346bc4de40">Indonesian</option><option role="option" data-user-option="" value="f830522e-1c57-e711-8113-c4346bc4de40">Iranian</option><option role="option" data-user-option="" value="fc30522e-1c57-e711-8113-c4346bc4de40">Iraqi</option><option role="option" data-user-option="" value="0031522e-1c57-e711-8113-c4346bc4de40">Irish</option><option role="option" data-user-option="" value="0a31522e-1c57-e711-8113-c4346bc4de40">Israeli</option><option role="option" data-user-option="" value="1431522e-1c57-e711-8113-c4346bc4de40">Italian</option><option role="option" data-user-option="" value="1a31522e-1c57-e711-8113-c4346bc4de40">Ivorian</option><option role="option" data-user-option="" value="2431522e-1c57-e711-8113-c4346bc4de40">Jamaican</option><option role="option" data-user-option="" value="2831522e-1c57-e711-8113-c4346bc4de40">Japanese</option><option role="option" data-user-option="" value="5031522e-1c57-e711-8113-c4346bc4de40">Jordanian</option><option role="option" data-user-option="" value="7031522e-1c57-e711-8113-c4346bc4de40">Kazakhstani</option><option role="option" data-user-option="" value="7431522e-1c57-e711-8113-c4346bc4de40">Kenyan</option><option role="option" data-user-option="" value="8831522e-1c57-e711-8113-c4346bc4de40">Kosovar</option><option role="option" data-user-option="" value="9431522e-1c57-e711-8113-c4346bc4de40">Kuwaiti</option><option role="option" data-user-option="" value="9a31522e-1c57-e711-8113-c4346bc4de40">Kyrgyzstani</option><option role="option" data-user-option="" value="b631522e-1c57-e711-8113-c4346bc4de40">Lao</option><option role="option" data-user-option="" value="cc31522e-1c57-e711-8113-c4346bc4de40">Latvian</option><option role="option" data-user-option="" value="e431522e-1c57-e711-8113-c4346bc4de40">Lebanese</option><option role="option" data-user-option="" value="1232522e-1c57-e711-8113-c4346bc4de40">Liberian</option><option role="option" data-user-option="" value="1632522e-1c57-e711-8113-c4346bc4de40">Libyan</option><option role="option" data-user-option="" value="2632522e-1c57-e711-8113-c4346bc4de40">Liechtensteiner</option><option role="option" data-user-option="" value="4432522e-1c57-e711-8113-c4346bc4de40">Lithuanian</option><option role="option" data-user-option="" value="6e32522e-1c57-e711-8113-c4346bc4de40">Luxembourger</option><option role="option" data-user-option="" value="7a32522e-1c57-e711-8113-c4346bc4de40">Macedonian</option><option role="option" data-user-option="" value="a032522e-1c57-e711-8113-c4346bc4de40">Malagasy</option><option role="option" data-user-option="" value="a632522e-1c57-e711-8113-c4346bc4de40">Malawian</option><option role="option" data-user-option="" value="ae32522e-1c57-e711-8113-c4346bc4de40">Malaysian</option><option role="option" data-user-option="" value="b232522e-1c57-e711-8113-c4346bc4de40">Maldivian</option><option role="option" data-user-option="" value="b632522e-1c57-e711-8113-c4346bc4de40">Malian</option><option role="option" data-user-option="" value="ba32522e-1c57-e711-8113-c4346bc4de40">Maltese</option><option role="option" data-user-option="" value="da32522e-1c57-e711-8113-c4346bc4de40">Marshallese</option><option role="option" data-user-option="" value="ee32522e-1c57-e711-8113-c4346bc4de40">Mauritanian</option><option role="option" data-user-option="" value="f032522e-1c57-e711-8113-c4346bc4de40">Mauritian</option><option role="option" data-user-option="" value="1433522e-1c57-e711-8113-c4346bc4de40">Mexican</option><option role="option" data-user-option="" value="1c33522e-1c57-e711-8113-c4346bc4de40">Micronesian</option><option role="option" data-user-option="" value="4033522e-1c57-e711-8113-c4346bc4de40">Moldovan</option><option role="option" data-user-option="" value="4433522e-1c57-e711-8113-c4346bc4de40">Monegasque</option><option role="option" data-user-option="" value="4833522e-1c57-e711-8113-c4346bc4de40">Mongolian</option><option role="option" data-user-option="" value="4c33522e-1c57-e711-8113-c4346bc4de40">Montenegrin</option><option role="option" data-user-option="" value="6433522e-1c57-e711-8113-c4346bc4de40">Moroccan</option><option role="option" data-user-option="" value="6833522e-1c57-e711-8113-c4346bc4de40">Mosotho</option><option role="option" data-user-option="" value="7233522e-1c57-e711-8113-c4346bc4de40">Motswana</option><option role="option" data-user-option="" value="7833522e-1c57-e711-8113-c4346bc4de40">Mozambican</option><option role="option" data-user-option="" value="de33522e-1c57-e711-8113-c4346bc4de40">Namibian</option><option role="option" data-user-option="" value="f233522e-1c57-e711-8113-c4346bc4de40">Nauruan</option><option role="option" data-user-option="" value="0234522e-1c57-e711-8113-c4346bc4de40">Nepalese</option><option role="option" data-user-option="" value="2234522e-1c57-e711-8113-c4346bc4de40">New Zealander</option><option role="option" data-user-option="" value="2c34522e-1c57-e711-8113-c4346bc4de40">Nicaraguan</option><option role="option" data-user-option="" value="3234522e-1c57-e711-8113-c4346bc4de40">Nigerian</option><option role="option" data-user-option="" value="3434522e-1c57-e711-8113-c4346bc4de40">Nigerien</option><option role="option" data-user-option="" value="3a34522e-1c57-e711-8113-c4346bc4de40">Ni-Vanuatu</option><option role="option" data-user-option="" value="8a34522e-1c57-e711-8113-c4346bc4de40">North Korean</option><option role="option" data-user-option="" value="9434522e-1c57-e711-8113-c4346bc4de40">Norwegian</option><option role="option" data-user-option="" value="de34522e-1c57-e711-8113-c4346bc4de40">Omani</option><option role="option" data-user-option="" value="4c35522e-1c57-e711-8113-c4346bc4de40">Pakistani</option><option role="option" data-user-option="" value="5035522e-1c57-e711-8113-c4346bc4de40">Palauan</option><option role="option" data-user-option="" value="5435522e-1c57-e711-8113-c4346bc4de40">Palestinian</option><option role="option" data-user-option="" value="5c35522e-1c57-e711-8113-c4346bc4de40">Panamanian</option><option role="option" data-user-option="" value="6635522e-1c57-e711-8113-c4346bc4de40">Papua New Guinean</option><option role="option" data-user-option="" value="7635522e-1c57-e711-8113-c4346bc4de40">Paraguayan</option><option role="option" data-user-option="" value="d235522e-1c57-e711-8113-c4346bc4de40">Peruvian</option><option role="option" data-user-option="" value="d435522e-1c57-e711-8113-c4346bc4de40">Philippine</option><option role="option" data-user-option="" value="1c36522e-1c57-e711-8113-c4346bc4de40">Polish</option><option role="option" data-user-option="" value="2636522e-1c57-e711-8113-c4346bc4de40">Portuguese</option><option role="option" data-user-option="" value="b436522e-1c57-e711-8113-c4346bc4de40">Puerto Rican</option><option role="option" data-user-option="" value="c636522e-1c57-e711-8113-c4346bc4de40">Qatari</option><option role="option" data-user-option="" value="d837522e-1c57-e711-8113-c4346bc4de40">Romanian</option><option role="option" data-user-option="" value="fc37522e-1c57-e711-8113-c4346bc4de40">Russian</option><option role="option" data-user-option="" value="0a38522e-1c57-e711-8113-c4346bc4de40">Rwandan</option><option role="option" data-user-option="" value="3e38522e-1c57-e711-8113-c4346bc4de40">Salvadoran</option><option role="option" data-user-option="" value="4038522e-1c57-e711-8113-c4346bc4de40">Sammarinese</option><option role="option" data-user-option="" value="4438522e-1c57-e711-8113-c4346bc4de40">Samoan</option><option role="option" data-user-option="" value="5238522e-1c57-e711-8113-c4346bc4de40">Sao Toméan</option><option role="option" data-user-option="" value="5c38522e-1c57-e711-8113-c4346bc4de40">Saudi</option><option role="option" data-user-option="" value="7438522e-1c57-e711-8113-c4346bc4de40">Scottish</option><option role="option" data-user-option="" value="9238522e-1c57-e711-8113-c4346bc4de40">Senegalese</option><option role="option" data-user-option="" value="9a38522e-1c57-e711-8113-c4346bc4de40">Serbian</option><option role="option" data-user-option="" value="a638522e-1c57-e711-8113-c4346bc4de40">Seychellois</option><option role="option" data-user-option="" value="be38522e-1c57-e711-8113-c4346bc4de40">Sierra Leonean</option><option role="option" data-user-option="" value="cc38522e-1c57-e711-8113-c4346bc4de40">Singaporean</option><option role="option" data-user-option="" value="f838522e-1c57-e711-8113-c4346bc4de40">Slovak</option><option role="option" data-user-option="" value="0039522e-1c57-e711-8113-c4346bc4de40">Slovenian</option><option role="option" data-user-option="" value="1439522e-1c57-e711-8113-c4346bc4de40">Solomon Islander</option><option role="option" data-user-option="" value="1839522e-1c57-e711-8113-c4346bc4de40">Somali</option><option role="option" data-user-option="" value="2439522e-1c57-e711-8113-c4346bc4de40">South African</option><option role="option" data-user-option="" value="2a39522e-1c57-e711-8113-c4346bc4de40">South Korean</option><option role="option" data-user-option="" value="3a39522e-1c57-e711-8113-c4346bc4de40">Spanish</option><option role="option" data-user-option="" value="6439522e-1c57-e711-8113-c4346bc4de40">Sri Lankan</option><option role="option" data-user-option="" value="7639522e-1c57-e711-8113-c4346bc4de40">Stateless</option><option role="option" data-user-option="" value="b439522e-1c57-e711-8113-c4346bc4de40">Sudanese</option><option role="option" data-user-option="" value="c839522e-1c57-e711-8113-c4346bc4de40">Surinamer</option><option role="option" data-user-option="" value="143a522e-1c57-e711-8113-c4346bc4de40">Swazi</option><option role="option" data-user-option="" value="1a3a522e-1c57-e711-8113-c4346bc4de40">Swedish</option><option role="option" data-user-option="" value="1e3a522e-1c57-e711-8113-c4346bc4de40">Swiss</option><option role="option" data-user-option="" value="2c3a522e-1c57-e711-8113-c4346bc4de40">Syrian</option><option role="option" data-user-option="" value="363a522e-1c57-e711-8113-c4346bc4de40">Taiwanese</option><option role="option" data-user-option="" value="3c3a522e-1c57-e711-8113-c4346bc4de40">Tajikistani</option><option role="option" data-user-option="" value="4a3a522e-1c57-e711-8113-c4346bc4de40">Tanzanian</option><option role="option" data-user-option="" value="943a522e-1c57-e711-8113-c4346bc4de40">Thai</option><option role="option" data-user-option="" value="c03a522e-1c57-e711-8113-c4346bc4de40">Timorese</option><option role="option" data-user-option="" value="d23a522e-1c57-e711-8113-c4346bc4de40">Togolese</option><option role="option" data-user-option="" value="da3a522e-1c57-e711-8113-c4346bc4de40">Tongan</option><option role="option" data-user-option="" value="fe3a522e-1c57-e711-8113-c4346bc4de40">Trinidadian</option><option role="option" data-user-option="" value="123b522e-1c57-e711-8113-c4346bc4de40">Tunisian</option><option role="option" data-user-option="" value="2e3b522e-1c57-e711-8113-c4346bc4de40">Turkish</option><option role="option" data-user-option="" value="323b522e-1c57-e711-8113-c4346bc4de40">Turkmen</option><option role="option" data-user-option="" value="3c3b522e-1c57-e711-8113-c4346bc4de40">Tuvaluan</option><option role="option" data-user-option="" value="5e3b522e-1c57-e711-8113-c4346bc4de40">Ugandan</option><option role="option" data-user-option="" value="643b522e-1c57-e711-8113-c4346bc4de40">Ukrainian</option><option role="option" data-user-option="" value="863b522e-1c57-e711-8113-c4346bc4de40">Unknown</option><option role="option" data-user-option="" value="963b522e-1c57-e711-8113-c4346bc4de40">Uruguayan</option><option role="option" data-user-option="" value="a43b522e-1c57-e711-8113-c4346bc4de40">Uzbekistani</option><option role="option" data-user-option="" value="c23b522e-1c57-e711-8113-c4346bc4de40">Vatican City State</option><option role="option" data-user-option="" value="cc3b522e-1c57-e711-8113-c4346bc4de40">Venezuelan</option><option role="option" data-user-option="" value="ea3b522e-1c57-e711-8113-c4346bc4de40">Vietnamese</option><option role="option" data-user-option="" value="723c522e-1c57-e711-8113-c4346bc4de40">Yemeni</option><option role="option" data-user-option="" value="a23c522e-1c57-e711-8113-c4346bc4de40">Yugoslavian</option><option role="option" data-user-option="" value="aa3c522e-1c57-e711-8113-c4346bc4de40">Zambian</option><option role="option" data-user-option="" value="b23c522e-1c57-e711-8113-c4346bc4de40">Zimbabwean</option>
+						</select>
+					
+					</label>
+           
+            <br />
+			<br />
+            <br style="clear:both" />
+			<div id="validate">
+			<p class="au-callout" aria-label="Callout description1">
+				<label class="au-control-input">
+				  <input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+				  <span class="au-control-input__text">
+				I confirm that I am authorised to provide the personal details presented and I consent to my  information being checked with the document issuer or official record holder via third party systems for the purpose of confirming your identity
+				</span>
+				</label>	
+				</p>
+				
+				<br />
+            <a href="new-arn-personal.html" class="au-btn au-btn--primary">Next</a>
+            
+           
+            </div>
+            <hr />
+            <a href="arn-saved.html" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>                 
+            </form>
+         </div>
+          </div>
+         </div>
+           </div>
+         </div>
+         <div class="footer">
+            
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
